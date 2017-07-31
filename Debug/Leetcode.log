@@ -1,0 +1,4 @@
+﻿  01 Easy.cpp
+f:\homework\leetcode\leetcode\leetcode\01 easy.cpp(37): warning C4715: 'Solution::twoSum': not all control paths return a value
+  Leetcode.vcxproj -> F:\Homework\Leetcode\Leetcode\Debug\Leetcode.exe
+  Leetcode.vcxproj -> F:\Homework\Leetcode\Leetcode\Debug\Leetcode.pdb (Partial PDB)
