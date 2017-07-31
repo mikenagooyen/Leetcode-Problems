@@ -1,4 +1,4 @@
 ﻿  07 Reverse Integer Easy.cpp
-f:\homework\leetcode\leetcode\leetcode\07 reverse integer easy.cpp(36): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+f:\homework\leetcode\leetcode\leetcode\07 reverse integer easy.cpp(38): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
   Leetcode.vcxproj -> F:\Homework\Leetcode\Leetcode\Debug\Leetcode.exe
   Leetcode.vcxproj -> F:\Homework\Leetcode\Leetcode\Debug\Leetcode.pdb (Partial PDB)
