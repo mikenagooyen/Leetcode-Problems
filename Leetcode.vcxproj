@@ -110,8 +110,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="19 Medium.cpp" />
-    <ClCompile Include="01 Easy.cpp" />
+    <ClCompile Include="07 Reverse Integer Easy.cpp" />
+    <ClCompile Include="19 Remove Nth Node from End of List Medium.cpp" />
+    <ClCompile Include="01 Two Sum Easy.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

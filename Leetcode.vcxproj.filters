@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="19 Medium.cpp">
+    <ClCompile Include="01 Two Sum Easy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="01 Easy.cpp">
+    <ClCompile Include="07 Reverse Integer Easy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="19 Remove Nth Node from End of List Medium.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

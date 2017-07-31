@@ -1,4 +1,4 @@
-﻿  01 Easy.cpp
-f:\homework\leetcode\leetcode\leetcode\01 easy.cpp(37): warning C4715: 'Solution::twoSum': not all control paths return a value
+﻿  07 Reverse Integer Easy.cpp
+f:\homework\leetcode\leetcode\leetcode\07 reverse integer easy.cpp(36): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
   Leetcode.vcxproj -> F:\Homework\Leetcode\Leetcode\Debug\Leetcode.exe
   Leetcode.vcxproj -> F:\Homework\Leetcode\Leetcode\Debug\Leetcode.pdb (Partial PDB)
