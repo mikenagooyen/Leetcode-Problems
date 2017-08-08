@@ -14,58 +14,47 @@ Try to do this in one pass.
 #include <stdlib.h>
 #include <iostream>
 
-struct ListNode {
-	int val;
-	ListNode* next;
-	ListNode(int x) : val(x), next(NULL){}
-};
+#include "LinkedList.h"
 
 class Solution {
-private:
-	ListNode* head;
 public:
-	void removeNthFromEnd(int n) {
-		ListNode* tmp = head;
+	void removeNthFromEnd(LinkedList* lst, int n) {
+		Node* head = lst->getHead();
 		int i = 0;
 
-		while (head != NULL) {
-			if (i != (n - 2)) {
-				*head->next = *head->next->next;
-				break;
-			}
-			else {
-				head = head->next;
-				i++;
-			}
-		}
-	}
-	Solution() {
-		head = new ListNode(1);
-		add(head, 2);
-		add(head, 3);
-		add(head, 4);
-		add(head, 5);
-	}
-	void add(ListNode* head, int n) {
-		ListNode* node = new ListNode(n);
-		while (head->next != NULL) {
-			head = head->next;
-		}
-		head->next = node;
-	}
-	void print() {
-		ListNode* curr = head;
+		//first get list size
+		Node* curr = head;
+		int length = 0;
+
 		while (curr != NULL) {
-			std::cout << curr->val;
+			length++;
 			curr = curr->next;
 		}
+		curr = head; //reset walker node
+		//iterate length - n times
+		for (i = 0; i < length - n - 1; i++) {
+			curr = curr->next;
+		}
+		//link the previous to target nodes next node
+		Node* temp = curr->next;
+		curr->next = curr->next->next;
+		delete temp;
 	}
 };
 
 //int main() {
-//	solution s;
-//	s.removenthfromend(2);
-//	s.print();
+//	LinkedList* lst = new LinkedList();
+//	Solution s;
+//	//init Linked List
+//	lst->insert(1);
+//	lst->insert(2);
+//	lst->insert(3);
+//	lst->insert(4);
+//	lst->insert(5);
+//	
+//	s.removeNthFromEnd(lst, 3);
+//
+//	lst->print();
 //
 //	return 0;
 //}
