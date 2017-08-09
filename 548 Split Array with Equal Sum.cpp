@@ -6,7 +6,7 @@ Return a boolean if it is possible to split.
 #include <iostream>
 
 
-int splitPoint(int arr[], int n) {
+int splitArray(int arr[], int n) {
 	int leftSum = 0;
 	//add up all numbers from array into left sum
 	//then remove and check for equal sum in right sum
@@ -18,20 +18,24 @@ int splitPoint(int arr[], int n) {
 		rightSum += arr[i];
 		leftSum -= arr[i];
 		if (leftSum == rightSum) {
-			return 1;
+			return i;
 		}
 	}
 	return -1;
 }
 
-int main() {
-	int arr[] = {1, 1, 1, 3};
-
-	if (splitPoint(arr, 4) == 1) {
-		std::cout << "Can split";
-	}
-	else {
-		std::cout << "Cannot split";
-	}
-	return 0;
-}
+//int main() {
+//	int arr[] = {1, 1, 1, 3};
+//	int splitPoint = splitArray(arr, 4);
+//
+//	if (splitPoint == -1) {
+//		std::cout << "Cannot split";
+//	}
+//	for (int i = 0; i < 4; i++)
+//	{
+//		if (splitPoint == i)
+//			std::cout << std::endl;
+//		std::cout << arr[i] << " ";
+//	}
+//	return 0;
+//}
